@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const btn = contactForm.querySelector('button[type="submit"]');
@@ -180,36 +180,67 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.innerHTML = '<span>Gönderiliyor...</span><i class="fas fa-spinner fa-spin"></i>';
             btn.disabled = true;
 
-            // Simulate form submission
-            setTimeout(() => {
-                btn.innerHTML = '<span>Gönderildi!</span><i class="fas fa-check"></i>';
-                btn.style.background = 'linear-gradient(135deg, #00D4AA, #00B894)';
+            const existingMsg = contactForm.querySelector('.form-alert-msg');
+            if (existingMsg) existingMsg.remove();
 
-                // Show success message
-                const successDiv = document.createElement('div');
-                successDiv.style.cssText = `
+            try {
+                const formData = new FormData(contactForm);
+                const response = await fetch("https://formsubmit.co/ajax/abdulrahmanshawa8@gmail.com", {
+                    method: "POST",
+                    headers: { 
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                });
+
+                if (response.ok) {
+                    btn.innerHTML = '<span>Gönderildi!</span><i class="fas fa-check"></i>';
+                    btn.style.background = 'linear-gradient(135deg, #00D4AA, #00B894)';
+
+                    const successDiv = document.createElement('div');
+                    successDiv.className = 'form-alert-msg';
+                    successDiv.style.cssText = `
+                        padding: 16px;
+                        background: rgba(0, 212, 170, 0.1);
+                        border: 1px solid rgba(0, 212, 170, 0.3);
+                        border-radius: 12px;
+                        color: #00D4AA;
+                        text-align: center;
+                        margin-top: 16px;
+                        font-weight: 600;
+                        animation: fadeInUp 0.5s ease forwards;
+                    `;
+                    successDiv.textContent = '✓ Mesajınız başarıyla e-posta adresime ulaştı!';
+                    contactForm.appendChild(successDiv);
+                    contactForm.reset();
+                } else {
+                    throw new Error("Gönderim başarısız");
+                }
+            } catch (error) {
+                btn.innerHTML = '<span>Hata Oluştu</span><i class="fas fa-exclamation-triangle"></i>';
+                btn.style.background = 'linear-gradient(135deg, #FF6B6B, #E55A5A)';
+
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'form-alert-msg';
+                errorDiv.style.cssText = `
                     padding: 16px;
-                    background: rgba(0, 212, 170, 0.1);
-                    border: 1px solid rgba(0, 212, 170, 0.3);
+                    background: rgba(255, 107, 107, 0.1);
+                    border: 1px solid rgba(255, 107, 107, 0.3);
                     border-radius: 12px;
-                    color: #00D4AA;
+                    color: #FF6B6B;
                     text-align: center;
                     margin-top: 16px;
                     font-weight: 600;
-                    animation: fadeInUp 0.5s ease forwards;
                 `;
-                successDiv.textContent = '✓ Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağım.';
-                contactForm.appendChild(successDiv);
-
-                // Reset form after 3 seconds
+                errorDiv.textContent = 'Mesaj gönderilirken bir hata oluştu. Lütfen doğrudan e-posta atınız.';
+                contactForm.appendChild(errorDiv);
+            } finally {
                 setTimeout(() => {
-                    contactForm.reset();
                     btn.innerHTML = originalHTML;
                     btn.style.background = '';
                     btn.disabled = false;
-                    successDiv.remove();
                 }, 4000);
-            }, 1500);
+            }
         });
     }
 
