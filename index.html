@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdurahman Shawa | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">A<span class="logo-dot">.</span>S</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#portfolio" class="nav-link">Projeler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Merhaba, Ben
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Abdurahman</span>
+                    <span class="title-line title-accent">Shawa</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Profesyonel Web Geliştirici & Tasarımcı
+                </p>
+                <p class="hero-description">
+                    Modern ve kullanıcı dostu dijital deneyimler yaratıyorum. 
+                    Yaratıcı çözümlerle markanızı dijital dünyada öne çıkarıyorum.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>Projelerimi Gör</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>İletişime Geç</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Proje</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Müşteri</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Yıl Deneyim</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <div class="hero-avatar">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-initials">A.S</span>
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>Web Dev</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-palette"></i>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Aşağı Kaydır</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hakkımda</span>
+                <h2 class="section-title">Kim <span class="text-gradient">Olduğumu</span> Keşfedin</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-col">
+                    <div class="about-image-card">
+                        <div class="about-avatar-large">
+                            <span>A.S</span>
+                        </div>
+                        <div class="about-image-decoration"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Yıl<br>Deneyim</span>
+                    </div>
+                </div>
+                <div class="about-content-col">
+                    <h3 class="about-heading">
+                        Tutkulu bir geliştirici, yaratıcı bir problem çözücü
+                    </h3>
+                    <p class="about-text">
+                        Merhaba! Ben <strong>Abdurahman Shawa</strong>. Modern web teknolojileri konusunda 
+                        uzmanlaşmış, kullanıcı odaklı dijital çözümler üreten bir yazılım geliştiricisiyim.
+                    </p>
+                    <p class="about-text">
+                        Her projede estetik tasarım ile fonksiyonelliği bir araya getirmeyi hedefliyorum.
+                        Sürekli öğrenmeye ve kendimi geliştirmeye açık biriyim. Takım çalışmasına önem 
+                        verir, temiz ve sürdürülebilir kod yazmayı ilke edinirim.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="info-label">Ad Soyad</span>
+                                <span class="info-value">Abdurahman Shawa</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">E-posta</span>
+                                <span class="info-value">info@abdurahmanshawa.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Konum</span>
+                                <span class="info-value">Türkiye</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="info-label">Durum</span>
+                                <span class="info-value available">Müsait</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Benimle İletişime Geç</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Yetenekler</span>
+                <h2 class="section-title">Teknik <span class="text-gradient">Becerilerim</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon" style="--skill-color: #E44D26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4>HTML5</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95" style="--bar-color: #E44D26;"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon" style="--skill-color: #1572B6;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h4>CSS3</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90" style="--bar-color: #1572B6;"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon" style="--skill-color: #F7DF1E;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88" style="--bar-color: #F7DF1E;"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon" style="--skill-color: #61DAFB;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h4>React</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85" style="--bar-color: #61DAFB;"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon" style="--skill-color: #339933;">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h4>Node.js</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80" style="--bar-color: #339933;"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon" style="--skill-color: #FF6B6B;">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h4>Figma</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="82" style="--bar-color: #FF6B6B;"></div>
+                    </div>
+                    <span class="skill-percent">82%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon" style="--skill-color: #7952B3;">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h4>Bootstrap</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90" style="--bar-color: #7952B3;"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="skill-icon" style="--skill-color: #F05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h4>Git</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85" style="--bar-color: #F05032;"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hizmetler</span>
+                <h2 class="section-title">Neler <span class="text-gradient">Yapabilirim</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Geliştirme</h3>
+                    <p>Modern ve performanslı web uygulamaları geliştiriyorum. Temiz kod ve en iyi uygulamalarla projelerinizi hayata geçiriyorum.</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Popüler</div>
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Tasarım</h3>
+                    <p>Kullanıcı deneyimini ön planda tutan, estetik ve fonksiyonel arayüz tasarımları oluşturuyorum.</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Tasarım</h3>
+                    <p>Tüm cihazlarda mükemmel görünen, mobil uyumlu web siteleri tasarlıyorum.</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimizasyon</h3>
+                    <p>Web sitenizin arama motorlarında üst sıralarda yer alması için SEO optimizasyonu yapıyorum.</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projeler</span>
+                <h2 class="section-title">Son <span class="text-gradient">Çalışmalarım</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                        <h3>E-Ticaret Platformu</h3>
+                        <p>Modern ve kullanıcı dostu online alışveriş deneyimi</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <h3>Restoran Web Sitesi</h3>
+                        <p>Şık tasarımlı restoran tanıtım ve sipariş sistemi</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                        </div>
+                        <h3>Dashboard Uygulaması</h3>
+                        <p>Veri görselleştirme ve analitik yönetim paneli</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span>Next.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <h3>Eğitim Platformu</h3>
+                        <p>Online kurs ve eğitim yönetim sistemi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Referanslar</span>
+                <h2 class="section-title">Müşteri <span class="text-gradient">Yorumları</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Abdurahman ile çalışmak harika bir deneyimdi. Projemizi zamanında ve beklentilerimizin üstünde teslim etti."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>M.Y</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mehmet Yılmaz</h4>
+                            <span>Şirket CEO'su</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Çok profesyonel ve yaratıcı bir geliştirici. Web sitemiz sayesinde satışlarımız %40 arttı. Kesinlikle tavsiye ederim."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>A.K</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ayşe Kaya</h4>
+                            <span>E-Ticaret Yöneticisi</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "İletişimi güçlü, teknik bilgisi üst düzey. Projemizin her aşamasında bizimle yakından ilgilendi."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>H.D</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Hasan Demir</h4>
+                            <span>Startup Kurucusu</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Benimle <span class="text-gradient">İletişime</span> Geçin</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-col">
+                    <h3>Bir projeniz mi var?</h3>
+                    <p>Birlikte harika işler çıkarabiliriz. Projeniz hakkında konuşmak için benimle iletişime geçin.</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">E-posta</span>
+                                <span class="contact-card-value">info@abdurahmanshawa.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Telefon</span>
+                                <span class="contact-card-value">+90 (5XX) XXX XX XX</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Konum</span>
+                                <span class="contact-card-value">Türkiye</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-col">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ad Soyad</label>
+                                <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta</label>
+                                <input type="email" id="email" name="email" placeholder="E-postanızı girin" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <input type="text" id="subject" name="subject" placeholder="Mesaj konusu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Mesaj Gönder</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">A<span class="logo-dot">.</span>S</span>
+                    <p>Modern web çözümleri ile markanızı dijital dünyada öne çıkarıyorum.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Linkler</h4>
+                    <a href="#hero">Ana Sayfa</a>
+                    <a href="#about">Hakkımda</a>
+                    <a href="#skills">Yetenekler</a>
+                    <a href="#portfolio">Projeler</a>
+                    <a href="#contact">İletişim</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Hizmetler</h4>
+                    <a href="#services">Web Geliştirme</a>
+                    <a href="#services">UI/UX Tasarım</a>
+                    <a href="#services">Responsive Tasarım</a>
+                    <a href="#services">SEO Optimizasyon</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Bülten</h4>
+                    <p>Yeniliklerden haberdar olun</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-postanız">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>Abdurahman Shawa</strong>. Tüm hakları saklıdır.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
